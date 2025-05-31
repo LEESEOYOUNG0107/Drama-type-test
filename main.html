@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="qna.css">
+    <link rel="stylesheet" href="result.css">
+    <link rel="stylesheet" href="animation.css">
+</head>
+<body>
+    <div class="container">
+        <div id="intro">
+            <h3>
+                드라마 영화 주인공 테스트 <br>
+                당신은 어떤 드라마, 영화 주인공일까요?
+            </h3>
+            <button  class="btn" onclick="js:begin()">시작!</button>
+        </div>
+
+        <div id="qna">
+            <div id="progress-bar">
+                <div id="progress"></div>
+            </div>
+
+            <div class="question"></div>
+            <div class="answer"></div>
+        </div>
+
+        <div id="result">
+            <h2>결과</h2>
+            <p id="result-text"></p>
+            <button class="btn" onclick="restartQuiz()">다시하기</button>
+        </div>
+        
+    </div>
+    <script src="main.js"></script>
+    <script src="start.js"></script>
+</body>
+</html>
