@@ -29,16 +29,25 @@ function addAnswer(answerText, qIndex){
     var answer = document.createElement('button');
 
     answer.classList.add('answerList'); /*버튼들에 answerList 클래스 이름 부여 */
+    answer.classList.add('fadeIn');
+    
     a.appendChild(answer);
     answer.innerHTML = answerText;
 
     answer.addEventListener("click", function(){ /*값을 선택했을 때 */
         let children = document.querySelectorAll('.answerList');
     
-        for(let i=0; i<children.length; i++){ /*비활성화 됨, 사라짐*/
-            children[i].disabled = true; 
-            children[i].style.display = 'none';
+        for(let i=0; i<children.length; i++){
+            children[i].disabled = true;
+            children[i].style.animation = "fadeOut 0.5s";
         }
-        goNext(++qIndex);
+
+        setTimeout(() => {
+            for(let i=0; i<children.length; i++){ /*비활성화 됨, 사라짐*/
+                children[i].style.display = 'none';
+            }
+            goNext(++qIndex);
+        }, 450) /*버튼이 사라지고 난 다음*/
+        
     });
 }
