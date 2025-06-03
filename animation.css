@@ -1,16 +1,8 @@
-@keyframes fadeIn { /*버튼이 사라질 때*/
+@keyframes fadeIn { /*버튼이 생기는 거*/
     from {opacity: 0;} /*투명도*/
     to{opacity: 1;}
 }
-@keyframes fadeOut { /*버튼이 생길 때*/
+@keyframes fadeOut { /*사라지는 거*/
     from {opacity: 1;}
     to{opacity: 0;}
 }
-
-/*.fadeIn{ /*fadeIn 이름으로 에니메이션이 동장할 수 있게 만듬*/
-    /*animation: fadeIn;
-    animation-duration: 0.5s; /*애니메이션이 실행되는 시간*/
-
-/*.fadeOut{
-    animation: fadeOut;
-    animation-duration: 0.5s; /*애니메이션이 실행되는 시간*/
