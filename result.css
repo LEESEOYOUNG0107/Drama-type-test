@@ -10,6 +10,11 @@
 }
 #resultName{
     font-size: 25px;
+    font-weight: 700;
+}
+#resulthashtag{
+    font-size: 23px;
+    margin-bottom: 15px;
 }
 #resultDesc{
     margin-bottom: 20px;

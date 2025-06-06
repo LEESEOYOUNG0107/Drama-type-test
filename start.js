@@ -69,3 +69,6 @@ function addAnswer(answerText, qIndex, idx) {
     });
 }
 
+function restart(){
+    begin();
+}

@@ -9,6 +9,9 @@ function setResult(){
 
     let resultName = document.querySelector('#resultName');
     resultName.innerHTML = infoList[point].name;
+
+    let resulthashtag = document.querySelector('#resulthashtag');
+    resulthashtag.innerHTML = infoList[point].hashtag;
     
     let resultDesc = document.querySelector('#resultDesc');
     resultDesc.innerHTML = infoList[point].desc;
