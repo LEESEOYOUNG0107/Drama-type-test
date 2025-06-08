@@ -35,7 +35,3 @@ function calculation(){
     let result = select.indexOf(Math.max(...select)); //최대값의 인덱스 반환
     return result;
 }
-
-function restart(){
-    begin();
-}

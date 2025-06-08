@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>나는 어떤 드라마 주인공일까?</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="qna.css">
     <link rel="stylesheet" href="result.css">
     <link rel="stylesheet" href="animation.css">
 </head>
+
 <body>
-    <div class="container">
-        <div id="intro">
-            <h3>
-                드라마 영화 주인공 테스트 <br>
-                당신은 어떤 드라마, 영화 주인공일까요?
-            </h3>
-            <div>
-                <img src="imgs/스물다섯,스물하나.webp" class="introImg"> <img src="imgs/마이데몬.webp" class="introImg"> 
-                <img src="imgs/커넥션.webp" class="introImg"> <img src="imgs/폭싹.webp" class="introImg"> 
-                <img src="imgs/파묘.webp" class="introImg"> <img src="imgs/신과함께.webp" class="introImg"> 
-                <img src="imgs/사랑.webp" class="introImg">
-            </div>
-            
-            <button class="btn" onclick="begin()">시작!</button>
+    <div id="intro">
+        <h3>
+            드라마 영화 주인공 테스트 <br>
+            당신은 어떤 드라마, 영화 주인공일까요?
+        </h3>
+        <div>
+            <img src="imgs/스물다섯,스물하나.webp" class="introImg"> <img src="imgs/마이데몬.webp" class="introImg">
+            <img src="imgs/커넥션.webp" class="introImg"> <img src="imgs/폭싹.webp" class="introImg">
+            <img src="imgs/파묘.webp" class="introImg"> <img src="imgs/신과함께.webp" class="introImg">
+            <img src="imgs/사랑.webp" class="introImg">
         </div>
 
-        <div id="qna">
-            <div class="progress">
-                <div class="progressBar"></div>
-            </div>
+        <button class="btn" onclick="begin()">시작!</button>
+    </div>
 
-            <div class="question"></div>
-            <div class="answer"></div>
+    <div id="qna">
+        <div class="progress">
+            <div class="progressBar"></div>
         </div>
 
-        <div id="result">
-            <h1>당신의 결과는?</h1>
-            <div id="resultImg"></div>
-            <div id="resultName"></div>
-            <div id="resulthashtag"></div>
-            <div id="resultDesc"></div>
-            <button class="btn" onclick="restart()">다시하기</button>
-        </div>
-        
+        <div class="question"></div>
+        <div class="answer"></div>
+    </div>
+
+    <div id="result">
+        <h1>당신의 결과는?</h1>
+        <div id="resultImg"></div>
+        <div id="resultName"></div>
+        <div id="resulthashtag"></div>
+        <div id="resultDesc"></div>
     </div>
     <script src="data.js"></script>
     <script src="start.js"></script>
     <script src="result.js"></script>
 </body>
+
 </html>

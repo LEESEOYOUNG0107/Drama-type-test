@@ -2,9 +2,11 @@
     display: none;
     color: white;
     text-align: center;
+    margin-top: 20px;
 }
 #resultImg img{
     height: 500px;
+    margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
 }
@@ -13,8 +15,9 @@
     font-weight: 700;
 }
 #resulthashtag{
+    color: rgba(211, 211, 211, 0.793);
     font-size: 23px;
-    margin-bottom: 15px;
+    margin-bottom: 7px;
 }
 #resultDesc{
     margin-bottom: 20px;
