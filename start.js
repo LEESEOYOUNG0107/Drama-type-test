@@ -50,9 +50,17 @@ function addAnswer(answerText, qIndex, idx) {
 
         setTimeout(() => {
             var target = qnaList[qIndex].a[idx].type;
-            for(let j=0; j<target.length; j++){ //답을 선택하면 해당하는 type의 값이 1씩 증가
-                select[target[j]] += 1; 
-            }   
+            
+             // 콘솔 출력
+            for(let j=0; j<target.length; j++){ // 답을 선택하면 해당하는 type의 값이 1씩 증가
+                const characterIndex = target[j]; // 점수를 얻는 캐릭터의 인덱스
+                select[characterIndex] += 1; // select 배열에 점수 1 증가
+                // data.js의 infoList에서 캐릭터 이름을 가져와 콘솔에 출력
+                console.log(`${infoList[characterIndex].name.trim().split('<br>')[0]} ${select[characterIndex]}`);
+            }
+            console.log('현재 모든 인물 점수:', select); // 모든 인물의 현재 총 점수 출력
+            console.log('------------------------------------');
+            // 콘솔 출력 로직 끝
 
             for (let i = 0; i < children.length; i++) { /*비활성화 됨, 사라짐*/
                 children[i].style.display = 'none';
