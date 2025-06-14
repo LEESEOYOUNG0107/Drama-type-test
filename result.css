@@ -1,27 +1,33 @@
-#result{
+#result {
     display: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.86);
     text-align: center;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
-#resultImg img{
+
+#resultImg img {
     height: 300px;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
 }
-#resultName{
+
+#resultName {
     font-size: 25px;
     font-weight: 700;
+    margin-bottom: 5px;
 }
-#resulthashtag{
+
+#resulthashtag {
     color: rgba(211, 211, 211, 0.793);
     font-size: 23px;
     margin-bottom: 20px;
 }
-#resultDesc{
-    border: 2px solid white;
+
+#resultDesc {
+    border: 2px solid rgba(255, 255, 255, 0.86);
     margin-bottom: 20px;
     text-align: left;
     padding: 20px;
+    font-size: 17px;
 }
