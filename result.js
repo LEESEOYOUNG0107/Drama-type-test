@@ -18,7 +18,6 @@ function setResult(){
 }
 
 function goResult() {
-    qna.style.animation = "fadeOut 1s";
     setTimeout(() => {
         qna.style.animation = "fadeIn 1s";
 
