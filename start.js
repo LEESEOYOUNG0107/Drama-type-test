@@ -1,7 +1,6 @@
 let main = document.querySelector("#intro");
 let qna = document.querySelector("#qna");
 let result = document.querySelector("#result");
-/*let endPoint = qnaList.length; /*질문 갯수 */
 let select = [0,0,0,0,0,0,0]; //답변
 
 function begin() {
@@ -34,7 +33,7 @@ function addAnswer(answerText, qIndex, idx) {
     var a = document.querySelector('.answer');
     var answer = document.createElement('button');
 
-    answer.classList.add('answerList'); /*버튼들에 answerList 클래스 이름 부여 */
+    answer.classList.add('answerList'); //'answerList' CSS를 추가
     answer.classList.add('fadeIn');
 
     a.appendChild(answer);
@@ -50,6 +49,11 @@ function addAnswer(answerText, qIndex, idx) {
 
         setTimeout(() => {
             var target = qnaList[qIndex].a[idx].type;
+            
+            for(let j=0; j<target.length; j++){ // 답을 선택하면 해당하는 type의 값이 1씩 증가
+                const characterIndex = target[j]; // 점수를 얻는 캐릭터의 인덱스
+                select[characterIndex] += 1; // select 배열에 점수 1 증가
+            }
 
             for (let i = 0; i < children.length; i++) { /*비활성화 됨, 사라짐*/
                 children[i].style.display = 'none';
@@ -62,6 +66,5 @@ function addAnswer(answerText, qIndex, idx) {
                 goNext(qIndex);
             }
         }, 450) /*버튼이 사라지고 난 다음*/
-        
     });
 }

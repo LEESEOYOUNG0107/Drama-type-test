@@ -5,7 +5,6 @@
     margin: 0 auto;
     position: fixed;
     top: 160px;
-    /* left: 50%; */
     z-index: 999 /* 프로그레스 바보다 아래에 오도록 z-index를 설정합니다. */
 } 
 .answerList{
@@ -33,12 +32,10 @@
     margin-bottom: 20px;
     margin-left: 70px; */
 
-    position: fixed; /* 프로그레스 바를 화면에 고정시킵니다. */
+    position: fixed;
     top: 100px; /* 상단에서 30px 떨어진 위치에 배치합니다. */
     left: 50%; /* 가로 중앙에 배치하기 위해 50%로 설정합니다. */
     transform: translateX(-50%); /* 정확히 중앙에 오도록 자신의 너비의 절반만큼 왼쪽으로 이동시킵니다. */
-   /* z-index: 1000; /* 다른 요소 위에 표시되도록 z-index를 높게 설정합니다. */
-
 }
 .progressBar{
     height: 100%;
